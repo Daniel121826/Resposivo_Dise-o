@@ -38,9 +38,6 @@
 * {
   box-sizing: border-box;
 }
-/* ================================
-   🍔 MENÚ HAMBURGUESA RESPONSIVO (mejorado)
-================================ */
 
 /* Botón hamburguesa base */
 .menu-toggle {
@@ -54,7 +51,6 @@
   position: relative;
 }
 
-/* Navegación normal (desktop) */
 .nav-links {
   transition: max-height 0.3s ease-in-out;
 }
@@ -490,19 +486,13 @@ footer li{
   padding: 10px;
   width: 120px;
 }
-/* ===============================
-   🧩 AJUSTES REALES PARA TABLETAS
-   Corrige solapamientos de texto e imagen
-================================ */
 
 @media (max-width: 1024px) {
 
-  /* General */
   body {
     overflow-x: hidden;
   }
 
-  /* HERO SECTION */
   .hero-content {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -510,13 +500,13 @@ footer li{
     padding: 40px 5%;
   }
   .div-hero-content {
-    grid-column: 1 / -1 !important;
+    grid-column: 1 / -1;
     grid-row: auto;
   }
   .hero-content .caja-abogados,
   .hero-content .parrafo,
   .hero-content .hero-buttons {
-    width: 100% !important;
+    width: 100%;
     margin: 0 auto;
   }
   .hero-buttons {
@@ -525,8 +515,6 @@ footer li{
     flex-wrap: wrap;
     gap: 15px;
   }
-
-  /* ABOUT SECTION */
   .about {
     display: flex;
     flex-direction: column;
@@ -537,7 +525,7 @@ footer li{
   }
   .about article,
   .about aside {
-    width: 100% !important;
+    width: 100% ;
     margin: 10px 0;
   }
   .about aside img {
@@ -546,7 +534,7 @@ footer li{
     border-radius: var(--radius-button-radius);
   }
 
-  /* SERVICES */
+
   .services {
     padding: 80px 5%;
     background-position: center;
@@ -557,7 +545,7 @@ footer li{
     width: 90%;
   }
 
-  /* TEAM */
+
   .parent-team {
     grid-template-columns: 1fr;
     width: 90%;
@@ -568,13 +556,11 @@ footer li{
     text-align: center;
   }
 
-  /* TESTIMONIALS */
   .testimonials blockquote {
     width: 80%;
     margin: 20px auto;
   }
 
-  /* CONTACTO */
   .contact-form form {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -582,21 +568,21 @@ footer li{
   }
   .contact-form form input,
   .contact-form form textarea {
-    width: 100% !important;
+    width: 100% ;
   }
   .nombre,
   .apellidos,
   .email,
   .titulo,
   .mensaje {
-    grid-column: 1 / -1 !important;
+    grid-column: 1 / -1 ;
   }
   .boton {
-    grid-column: 1 / -1 !important;
+    grid-column: 1 / -1;
     justify-self: center;
   }
 
-  /* LOCATION */
+
   .location {
     display: flex;
     flex-direction: column;
@@ -618,7 +604,6 @@ footer li{
     height: 300px;
   }
 
-  /* FOOTER */
   .footer {
     flex-direction: column;
     align-items: center;
@@ -641,6 +626,10 @@ footer li{
 
   body {
     font-size: 0.9rem;
+  }
+  .team-members{
+    display: flex;
+    flex-direction: column;
   }
 
   h1 { font-size: 2rem; }
@@ -730,8 +719,8 @@ footer li{
   .email,
   .titulo,
   .mensaje {
-    grid-column: 1 / -1 !important;
-    grid-row: auto !important;
+    grid-column: 1 / -1;
+    grid-row: auto;
   }
   .boton {
     grid-column: 1 / -1;
