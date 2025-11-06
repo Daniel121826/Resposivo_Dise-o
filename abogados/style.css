@@ -492,7 +492,6 @@ footer li{
   body {
     overflow-x: hidden;
   }
-
   .hero-content {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -551,7 +550,6 @@ footer li{
     width: 90%;
   }
   .team {
-    grid-column: 1 / -1;
     padding: 30px 20px;
     text-align: center;
   }
