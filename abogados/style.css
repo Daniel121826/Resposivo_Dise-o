@@ -550,6 +550,7 @@ footer li{
     width: 90%;
   }
   .team {
+    grid-column: 1 / -1;
     padding: 30px 20px;
     text-align: center;
   }
