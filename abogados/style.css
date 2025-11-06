@@ -665,12 +665,13 @@ footer li{
   }
   .hero-buttons {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    flex-direction: var(--size-parrafo);
   }
   .btn {
     width: 80%;
     margin-bottom: 10px;
+    align-items: center;
   }
 
   .about {
@@ -719,12 +720,7 @@ footer li{
   .email,
   .titulo,
   .mensaje {
-    grid-column: 1 / -1;
     grid-row: auto;
-  }
-  .boton {
-    grid-column: 1 / -1;
-    justify-self: center;
   }
 
   .location {
@@ -735,9 +731,10 @@ footer li{
   }
 
   .footer {
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+    padding-bottom: 10%;
+  }
+  .footer-info{
+    margin-right: 10%;
   }
   .footer-logo,
   .newsletter {
@@ -768,7 +765,6 @@ footer li{
   .services p {
     width: 100%;
   }
-
   .footer-logo,
   .newsletter {
     width: 100%;
